@@ -33,29 +33,29 @@ class AddNewFlashCardController: UIViewController {
     
     private let termLabel: UILabel = {
         let label = UILabel()
-        label.text = "Pojęcie"
+        label.text = "Term"
         label.textAlignment = .center
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 21)
         return label
     }()
     
-    private let termTextField = CustomTextField(placeholder: "np. Apple")
+    private let termTextField = CustomTextField(placeholder: "Enter a term")
     
     private let definitionLabel: UILabel = {
         let label = UILabel()
-        label.text = "Definicja"
+        label.text = "Definition"
         label.textAlignment = .center
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 21)
         return label
     }()
     
-    private let definitionTextField = CustomTextField(placeholder: "np. Jabłko")
+    private let definitionTextField = CustomTextField(placeholder: "Enter a definition")
     
     lazy var addButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Dodaj", for: .normal)
+        button.setTitle("Add", for: .normal)
         button.isEnabled = true
         button.backgroundColor = #colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1)
         button.setTitleColor(.white, for: .normal)
@@ -67,7 +67,7 @@ class AddNewFlashCardController: UIViewController {
     
     private let doneButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Gotowe", for: .normal)
+        button.setTitle("Done", for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -78,7 +78,7 @@ class AddNewFlashCardController: UIViewController {
     
     private let cancelButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Anuluj", for: .normal)
+        button.setTitle("Cancel", for: .normal)
         button.setTitleColor(#colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.addTarget(self, action: #selector(handleCancelButton), for: .touchUpInside)

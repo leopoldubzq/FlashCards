@@ -39,10 +39,10 @@ class HomeController: UIViewController, UIGestureRecognizerDelegate {
     
     private let editButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Edytuj", for: .normal)
+        button.setTitle("Edit", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.addTarget(self, action: #selector(handleEditButton), for: .touchUpInside)
-        let att = NSAttributedString(string: "Edytuj", attributes: [.font: UIFont.boldSystemFont(ofSize: 17)])
+        let att = NSAttributedString(string: "Edit", attributes: [.font: UIFont.boldSystemFont(ofSize: 17)])
         button.setAttributedTitle(att, for: .normal)
         return button
     }()
@@ -63,7 +63,7 @@ class HomeController: UIViewController, UIGestureRecognizerDelegate {
     
     private let addNewFlashCardLabel: UILabel = {
         let label = UILabel()
-        label.text = "Stwórz nową grupę"
+        label.text = "Create a new group"
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 24)
         label.textAlignment = .center
@@ -138,14 +138,11 @@ class HomeController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @objc func handleEditButton() {
-        print("DEBUG: Editing rows...")
         if (tableView.isEditing) {
             tableView.isEditing = false
         } else {
             tableView.isEditing = true
         }
-        
-        
     }
     
     @objc func handleLongPressGesture(_ press: UILongPressGestureRecognizer) {
@@ -153,7 +150,7 @@ class HomeController: UIViewController, UIGestureRecognizerDelegate {
             let menu = UIMenuController.shared
             becomeFirstResponder()
             
-            let menuItem = UIMenuItem(title: "Edytuj", action: #selector(handleMenuItemTap))
+            let menuItem = UIMenuItem(title: "Edit", action: #selector(handleMenuItemTap))
             menu.menuItems = [menuItem]
             let location = press.location(in: press.view)
             let menuLocation = CGRect(x: location.x, y: location.y, width: 0, height: 0)
@@ -246,7 +243,7 @@ class HomeController: UIViewController, UIGestureRecognizerDelegate {
     func configureNavigationBar() {
         navigationController?.navigationBar.isHidden = false
         navigationController?.navigationBar.barTintColor = .white
-        navigationItem.title = "Grupy"
+        navigationItem.title = "Groups"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gear"),
                                                             style: .plain,
                                                             target: self,
@@ -283,7 +280,7 @@ class HomeController: UIViewController, UIGestureRecognizerDelegate {
     
     func deleteAction(at indexPath: IndexPath) -> UIContextualAction {
         let item = groups[indexPath.row]
-        let action = UIContextualAction(style: .normal, title: "Usuń") { (action, view, completion) in
+        let action = UIContextualAction(style: .normal, title: "Delete") { (action, view, completion) in
             self.deleteItem(item: item)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
             self.checkIfArrayIsEmpty()

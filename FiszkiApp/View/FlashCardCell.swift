@@ -17,7 +17,7 @@ class FlashCardCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.numberOfLines = 0
-        label.text = "Pojęcie"
+        label.text = "Term"
         label.textColor = .black
         return label
     }()
@@ -35,7 +35,7 @@ class FlashCardCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.numberOfLines = 0
-        label.text = "Definicja"
+        label.text = "Definition"
         label.textColor = .black
         return label
     }()

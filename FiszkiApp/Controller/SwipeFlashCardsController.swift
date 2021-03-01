@@ -49,7 +49,7 @@ class SwipeFlashCardsController: UIViewController {
     
     private let cancelButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Wyjdź", for: .normal)
+        button.setTitle("Quit", for: .normal)
         button.setTitleColor(#colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.addTarget(self, action: #selector(handleCancelButton), for: .touchUpInside)
@@ -72,7 +72,7 @@ class SwipeFlashCardsController: UIViewController {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.numberOfLines = 0
-        label.text = "Pojęcie"
+        label.text = "Term"
         label.tintColor = .black
         return label
     }()
@@ -90,7 +90,7 @@ class SwipeFlashCardsController: UIViewController {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.numberOfLines = 0
-        label.text = "Definicja"
+        label.text = "Definition"
         label.tintColor = .black
         return label
     }()
@@ -174,7 +174,7 @@ class SwipeFlashCardsController: UIViewController {
     
     private let correctAnswerLabel: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Dobra odpowiedź:"
+        lbl.text = "Good answers:"
         lbl.textColor = .black
         lbl.font = .systemFont(ofSize: 22)
         return lbl
@@ -190,7 +190,7 @@ class SwipeFlashCardsController: UIViewController {
     
     private let wrongAnswerLabel: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Zła odpowiedź:"
+        lbl.text = "Bad answers:"
         lbl.textColor = .black
         lbl.font = .systemFont(ofSize: 22)
         return lbl
@@ -387,7 +387,7 @@ class SwipeFlashCardsController: UIViewController {
         view.addSubview(deckView)
         
         view.addSubview(remainedFlashCardsView)
-        numberOfFlashCardsLabel.text? = "Pozostało fiszek: \(flashCards.count)"
+        numberOfFlashCardsLabel.text? = "Flashcards left: \(flashCards.count)"
         remainedFlashCardsView.centerX(inView: view)
         remainedFlashCardsView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
                                        paddingTop: 30,
@@ -450,21 +450,6 @@ class SwipeFlashCardsController: UIViewController {
     }
     
     func performSwipeAnimation(shouldAnswerCorrectly: Bool) {
-//        let translation: CGFloat = shouldAnswerCorrectly ? 700 : -700
-//        let degrees: CGFloat = translation / 20
-//        let angle = degrees * .pi / 180
-//
-//        guard let topCardWidth = self.topCardView?.frame.width else { return }
-//        guard let topCardHeight = self.topCardView?.frame.height else { return }
-//
-//        UIView.animate(withDuration: 1.3, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: .curveEaseOut) {
-//            self.topCardView?.frame = CGRect(x: translation, y: 0, width: topCardWidth, height: topCardHeight)
-//            self.topCardView?.transform = CGAffineTransform(rotationAngle: angle)
-//        } completion: { _ in
-//
-//
-//        }
-        
         self.topCardView?.removeFromSuperview()
         guard !self.cardViews.isEmpty else { return }
         self.cardViews.remove(at: self.cardViews.count - 1)
@@ -554,7 +539,7 @@ extension SwipeFlashCardsController: CardViewDelegate {
             self.counter += 1
             self.checkIfArrayOfFlashCardsIsEmpty()
             self.setProgressBar()
-            self.numberOfFlashCardsLabel.text? = "Pozostało fiszek: \(self.cardViews.count)"
+            self.numberOfFlashCardsLabel.text? = "Flashcards left: \(self.cardViews.count)"
             self.numberOfCorrectAnswersLabel.text = "\(rightAnswersCount)"
             self.numberOfWrongAnswersLabel.text = "\(wrongAnswersCount)"
            

@@ -46,7 +46,7 @@ class FlashCardController: UIViewController {
         label.textColor = .black
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.text = "Ostatni \n wynik"
+        label.text = "Last \n score"
         return label
     }()
     
@@ -88,7 +88,7 @@ class FlashCardController: UIViewController {
     
     private let startButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Zaczynamy!", for: .normal)
+        button.setTitle("Let's go!", for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1).withAlphaComponent(0.95)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -220,7 +220,7 @@ class FlashCardController: UIViewController {
  
         guard let count = group?.flashCards?.count else { return }
         
-        numberOfFlashCardsLabel.text = "Ilość fiszek: \(count)"
+        numberOfFlashCardsLabel.text = "Number of flashcards: \(count)"
         
         view.addSubview(backButton)
         backButton.anchor(top: view.safeAreaLayoutGuide.topAnchor,
@@ -476,7 +476,7 @@ extension FlashCardController: SwipeFlashCardsControllerDelegate {
         guard let count = group?.flashCards?.count else { return }
  
         DispatchQueue.main.async {
-            self.numberOfFlashCardsLabel.text = "Ilość fiszek: \(count)"
+            self.numberOfFlashCardsLabel.text = "Number of flashcards: \(count)"
             self.percentageLabel.text = "\(self.calculateEffectiveness())%"
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 self.setProgressBar()

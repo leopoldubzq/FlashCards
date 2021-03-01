@@ -42,7 +42,7 @@ class AppearanceController: UIViewController {
     
     func configureTabBar() {
         navigationController?.navigationBar.tintColor = .black
-        navigationItem.title = "Wygląd"
+        navigationItem.title = "Appearance"
         navigationItem.largeTitleDisplayMode = .never
     }
     

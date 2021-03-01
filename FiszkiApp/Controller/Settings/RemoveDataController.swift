@@ -14,7 +14,7 @@ class RemoveDataController: UIViewController {
     //MARK: - Properties
     
     private let data = [
-        "Usuń fiszki", "Usuń wszystko"
+        "Remove flashcards", "Remove everything"
     ]
     
     var group: GroupItem?
@@ -49,7 +49,7 @@ class RemoveDataController: UIViewController {
     
     func configureTabBar() {
         navigationController?.navigationBar.tintColor = .black
-        navigationItem.title = "Wyzeruj dane"
+        navigationItem.title = "Remove data"
         navigationItem.largeTitleDisplayMode = .never
     }
     
@@ -114,24 +114,24 @@ extension RemoveDataController: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            let alert = UIAlertController(title: nil, message: "Czy na pewno chcesz usunąć wszystkie fiszki?", preferredStyle: .actionSheet)
-            alert.addAction(UIAlertAction(title: "Usuń", style: .destructive, handler: { [weak self] _ in
+            let alert = UIAlertController(title: nil, message: "Are you sure you want to delete all flashcards?", preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
                 guard let self = self else { return }
-                let okAlert = UIAlertController(title: "Pomyślnie usunięto fiszki.", message: nil, preferredStyle: .alert)
+                let okAlert = UIAlertController(title: "Flashcards deleted successfully.", message: nil, preferredStyle: .alert)
                 okAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
                     self.navigationController?.popViewController(animated: true)
                 }))
                 self.present(okAlert, animated: true, completion: nil)
                 self.deleteAllFlashCards()
             }))
-            alert.addAction(UIAlertAction(title: "Anuluj", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             present(alert, animated: true, completion: nil)
             
         case 1:
-            let alert = UIAlertController(title: "Czy na pewno chcesz usunąć całą zawartość aplikacji?", message: "Stracisz wszystkie grupy i fiszki wraz z postępem.", preferredStyle: .actionSheet)
-            alert.addAction(UIAlertAction(title: "Usuń", style: .destructive, handler: { [weak self] _ in
+            let alert = UIAlertController(title: "Are you sure you want to delete all application content?", message: "You will lose all groups and cards including your progress.", preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [weak self] _ in
                 guard let self = self else { return }
-                let okAlert = UIAlertController(title: "Pomyślnie usunięto zawartość aplikacji.", message: nil, preferredStyle: .alert)
+                let okAlert = UIAlertController(title: "Application content deleted successfully.", message: nil, preferredStyle: .alert)
                 okAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] _ in
                     guard let self = self else { return }
                     self.navigationController?.popViewController(animated: true)
@@ -139,7 +139,7 @@ extension RemoveDataController: UITableViewDelegate, UITableViewDataSource {
                 self.present(okAlert, animated: true, completion: nil)
                 self.deleteAllGroups()
             }))
-            alert.addAction(UIAlertAction(title: "Anuluj", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             present(alert, animated: true, completion: nil)
         default: break
         }

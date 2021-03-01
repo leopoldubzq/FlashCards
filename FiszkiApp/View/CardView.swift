@@ -42,7 +42,7 @@ class CardView: UIView {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 26)
         label.numberOfLines = 0
-        label.text = "Pojęcie"
+        label.text = "Term"
         label.textColor = .black
         label.textAlignment = .center
         return label
@@ -62,7 +62,7 @@ class CardView: UIView {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 26)
         label.numberOfLines = 0
-        label.text = "Definicja"
+        label.text = "Definition"
         label.textColor = .black
         label.textAlignment = .center
         label.isHidden = true
@@ -82,7 +82,7 @@ class CardView: UIView {
     
     lazy var rightLabel: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Dobrze!"
+        lbl.text = "Good!"
         lbl.textColor = .systemGreen
         lbl.font = UIFont(name: "ChalkboardSE-Bold", size: 23)
         lbl.alpha = 0
@@ -91,7 +91,7 @@ class CardView: UIView {
     
     lazy var leftLabel: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Źle :("
+        lbl.text = "Bad :("
         lbl.textColor = .systemRed
         lbl.font = UIFont(name: "ChalkboardSE-Bold", size: 23)
         lbl.alpha = 0
@@ -101,7 +101,7 @@ class CardView: UIView {
     lazy var revealDefinitionButton: UIButton = {
         let button = UIButton(type: .system)
         
-        button.setTitle("Odkryj odpowiedź", for: .normal)
+        button.setTitle("Reveal the answer", for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(handleRevealDefinitionButton),

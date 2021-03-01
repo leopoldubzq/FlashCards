@@ -14,7 +14,7 @@ class ReportBugController: UIViewController {
     
     private let sendMessageButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Wyślij", for: .normal)
+        button.setTitle("Send", for: .normal)
         button.backgroundColor = #colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)

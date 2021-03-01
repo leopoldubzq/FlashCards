@@ -34,7 +34,7 @@ class SettingsController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
-        navigationItem.title = "Ustawienia"
+        navigationItem.title = "Settings"
     }
     
     //MARK: - Helpers
@@ -63,14 +63,17 @@ class SettingsController: UIViewController {
             print("DEBUG: Something went wrong...")
             return
         }
+        
+        let englishBody = "What went wrong?\n\n\n\n\n\n\nIf you have any screenshot or a screen recording, please include it in the message. It's gonna make it easier for developers to locate the problem."
+        
         let body = "Co poszło nie tak?\n\n\n\n\n\n\nJeżeli posiadasz screena bądź nagranie ekranu, załącz je w wiadomości. Ułatwi to pracę deweloperom w lokalizacji problemu."
         
         let composer = MFMailComposeViewController()
         
         composer.mailComposeDelegate = self
         composer.setToRecipients(["leopold.romanowski@gmail.com"])
-        composer.setSubject("Zgłoszenie błędu")
-        composer.setMessageBody(body, isHTML: false)
+        composer.setSubject("Bug report")
+        composer.setMessageBody(englishBody, isHTML: false)
         
         present(composer, animated: true)
     }
@@ -83,7 +86,7 @@ class SettingsController: UIViewController {
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
         composer.setToRecipients(["leopold.romanowski@gmail.com"])
-        composer.setSubject("Kontakt")
+        composer.setSubject("Contact")
         present(composer, animated: true)
     }
 }
@@ -178,7 +181,7 @@ extension SettingsController: MFMailComposeViewControllerDelegate {
         }
         
         controller.dismiss(animated: true) {
-            let okAlert = UIAlertController(title: nil, message: "Wiadomość wysłana.", preferredStyle: .alert)
+            let okAlert = UIAlertController(title: nil, message: "The message has been sent.", preferredStyle: .alert)
             okAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(okAlert, animated: true, completion: nil)
         }

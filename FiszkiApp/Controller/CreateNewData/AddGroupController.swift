@@ -32,17 +32,17 @@ class AddGroupController: UIViewController {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Nazwa grupy"
+        label.text = "Group name"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 24)
         return label
     }()
      
-    private let newGroupTextField = CustomTextField(placeholder: "np. Angielski")
+    private let newGroupTextField = CustomTextField(placeholder: "e.g. English")
     
     private let doneButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Zrobione", for: .normal)
+        button.setTitle("Done", for: .normal)
         button.isEnabled = false
         button.backgroundColor = #colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1).withAlphaComponent(0.5)
         button.setTitleColor(UIColor(white: 1, alpha: 0.67), for: .normal)
@@ -54,7 +54,7 @@ class AddGroupController: UIViewController {
     
     private let cancelButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Anuluj", for: .normal)
+        button.setTitle("Cancel", for: .normal)
         button.setTitleColor(#colorLiteral(red: 0.05098039216, green: 0.4392156863, blue: 0.9960784314, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         button.addTarget(self, action: #selector(handleCancelButton), for: .touchUpInside)
