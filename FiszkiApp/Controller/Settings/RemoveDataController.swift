@@ -115,7 +115,8 @@ extension RemoveDataController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let alert = UIAlertController(title: nil, message: "Czy na pewno chcesz usunąć wszystkie fiszki?", preferredStyle: .actionSheet)
-            alert.addAction(UIAlertAction(title: "Usuń", style: .destructive, handler: { _ in
+            alert.addAction(UIAlertAction(title: "Usuń", style: .destructive, handler: { [weak self] _ in
+                guard let self = self else { return }
                 let okAlert = UIAlertController(title: "Pomyślnie usunięto fiszki.", message: nil, preferredStyle: .alert)
                 okAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
                     self.navigationController?.popViewController(animated: true)
@@ -128,9 +129,11 @@ extension RemoveDataController: UITableViewDelegate, UITableViewDataSource {
             
         case 1:
             let alert = UIAlertController(title: "Czy na pewno chcesz usunąć całą zawartość aplikacji?", message: "Stracisz wszystkie grupy i fiszki wraz z postępem.", preferredStyle: .actionSheet)
-            alert.addAction(UIAlertAction(title: "Usuń", style: .destructive, handler: { _ in
+            alert.addAction(UIAlertAction(title: "Usuń", style: .destructive, handler: { [weak self] _ in
+                guard let self = self else { return }
                 let okAlert = UIAlertController(title: "Pomyślnie usunięto zawartość aplikacji.", message: nil, preferredStyle: .alert)
-                okAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                okAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] _ in
+                    guard let self = self else { return }
                     self.navigationController?.popViewController(animated: true)
                 }))
                 self.present(okAlert, animated: true, completion: nil)

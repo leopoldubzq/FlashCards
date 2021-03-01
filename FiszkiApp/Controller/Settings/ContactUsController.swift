@@ -66,7 +66,8 @@ extension ContactUsController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         
         let okAlert = UIAlertController(title: nil, message: "Wiadomość wysłana.", preferredStyle: .alert)
-        okAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+        okAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] _ in
+            guard let self = self else { return }
             self.navigationController?.popViewController(animated: true)
         }))
         self.present(okAlert, animated: true, completion: nil)
