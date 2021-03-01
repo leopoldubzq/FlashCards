@@ -1,4 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Answer" representedClassName="Answer" syncable="YES">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="didAnswerCorrectly" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="term" optional="YES" attributeType="String"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupItem" inverseName="rawAnswers" inverseEntity="GroupItem"/>
+    </entity>
+    <entity name="CorrectAnswer" representedClassName="CorrectAnswer" syncable="YES">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="term" optional="YES" attributeType="String"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupItem" inverseName="rawCorectAnswers" inverseEntity="GroupItem"/>
+    </entity>
+    <entity name="FlashCardItem" representedClassName="FlashCardItem" syncable="YES">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="didAnswerCorrectly" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="hasBeenUsed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="term" optional="YES" attributeType="String"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupItem" inverseName="rawFlashCards" inverseEntity="GroupItem"/>
+    </entity>
+    <entity name="GroupItem" representedClassName="GroupItem" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="rawAnswers" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Answer" inverseName="group" inverseEntity="Answer"/>
+        <relationship name="rawCorectAnswers" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CorrectAnswer" inverseName="group" inverseEntity="CorrectAnswer"/>
+        <relationship name="rawFlashCards" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="FlashCardItem" inverseName="group" inverseEntity="FlashCardItem"/>
+        <relationship name="rawLastRightAnswers" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="LastRightAnswer" inverseName="group" inverseEntity="LastRightAnswer"/>
+        <relationship name="rawLastScore" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="LastScore" inverseName="group" inverseEntity="LastScore"/>
+        <relationship name="rawWrongAnswers" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="WrongAnswer" inverseName="group" inverseEntity="WrongAnswer"/>
+    </entity>
+    <entity name="LastRightAnswer" representedClassName="LastRightAnswer" syncable="YES">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="term" optional="YES" attributeType="String"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupItem" inverseName="rawLastRightAnswers" inverseEntity="GroupItem"/>
+    </entity>
+    <entity name="LastScore" representedClassName="LastScore" syncable="YES">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="term" optional="YES" attributeType="String"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupItem" inverseName="rawLastScore" inverseEntity="GroupItem"/>
+    </entity>
+    <entity name="WrongAnswer" representedClassName="WrongAnswer" syncable="YES">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="term" optional="YES" attributeType="String"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroupItem" inverseName="rawWrongAnswers" inverseEntity="GroupItem"/>
+    </entity>
+    <elements>
+        <element name="Answer" positionX="-90" positionY="0" width="128" height="89"/>
+        <element name="CorrectAnswer" positionX="-72" positionY="36" width="128" height="74"/>
+        <element name="FlashCardItem" positionX="-41.060546875" positionY="-41.88323974609375" width="128" height="104"/>
+        <element name="GroupItem" positionX="-176.13134765625" positionY="-68.52554321289062" width="85.055908203125" height="134"/>
+        <element name="LastScore" positionX="-63" positionY="63" width="128" height="74"/>
+        <element name="WrongAnswer" positionX="-81" positionY="9" width="128" height="74"/>
+        <element name="LastRightAnswer" positionX="-54" positionY="81" width="128" height="74"/>
+    </elements>
 </model>

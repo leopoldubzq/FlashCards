@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		028304BE25C439DA00844F62 /* checkmark.json in Resources */ = {isa = PBXBuildFile; fileRef = 028304BD25C439DA00844F62 /* checkmark.json */; };
+		028304CA25C43AD400844F62 /* checkmark-no.json in Resources */ = {isa = PBXBuildFile; fileRef = 028304C925C43AD400844F62 /* checkmark-no.json */; };
+		0283050225C5A20700844F62 /* SummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283050125C5A20700844F62 /* SummaryController.swift */; };
+		028305B125C96F1600844F62 /* RightAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028305B025C96F1600844F62 /* RightAnswer.swift */; };
+		028305B425C96F9200844F62 /* WrongAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028305B325C96F9200844F62 /* WrongAnswer.swift */; };
+		0283065325CAA1E800844F62 /* Answer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283064725CAA1E800844F62 /* Answer+CoreDataClass.swift */; };
+		0283065425CAA1E800844F62 /* Answer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283064825CAA1E800844F62 /* Answer+CoreDataProperties.swift */; };
+		0283065725CAA1E800844F62 /* WrongAnswer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283064B25CAA1E800844F62 /* WrongAnswer+CoreDataClass.swift */; };
+		0283065825CAA1E800844F62 /* WrongAnswer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283064C25CAA1E800844F62 /* WrongAnswer+CoreDataProperties.swift */; };
+		0283065925CAA1E800844F62 /* FlashCardItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283064D25CAA1E800844F62 /* FlashCardItem+CoreDataClass.swift */; };
+		0283065A25CAA1E800844F62 /* FlashCardItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283064E25CAA1E800844F62 /* FlashCardItem+CoreDataProperties.swift */; };
+		0283065D25CAA1E800844F62 /* CorrectAnswer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283065125CAA1E800844F62 /* CorrectAnswer+CoreDataClass.swift */; };
+		0283065E25CAA1E800844F62 /* CorrectAnswer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283065225CAA1E800844F62 /* CorrectAnswer+CoreDataProperties.swift */; };
+		0283066B25CAA55000844F62 /* LastScore+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283066725CAA55000844F62 /* LastScore+CoreDataClass.swift */; };
+		0283066C25CAA55000844F62 /* LastScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283066825CAA55000844F62 /* LastScore+CoreDataProperties.swift */; };
+		0283067025CAC45E00844F62 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283066F25CAC45E00844F62 /* SettingsController.swift */; };
+		0283067525CAD10F00844F62 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283067425CAD10F00844F62 /* SettingsCell.swift */; };
+		0283067A25CAE05300844F62 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283067925CAE05300844F62 /* SettingsSection.swift */; };
+		0283067E25CAF0DE00844F62 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283067D25CAF0DE00844F62 /* AppearanceController.swift */; };
+		0283068225CB186B00844F62 /* AppearanceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283068125CB186B00844F62 /* AppearanceSection.swift */; };
+		0283068A25CC0D6400844F62 /* TestSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283068925CC0D6400844F62 /* TestSection.swift */; };
+		0283069125CC4B1500844F62 /* GroupItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283068D25CC4B1500844F62 /* GroupItem+CoreDataClass.swift */; };
+		0283069225CC4B1500844F62 /* GroupItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283068E25CC4B1500844F62 /* GroupItem+CoreDataProperties.swift */; };
+		0283069325CC4B1500844F62 /* LastRightAnswer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283068F25CC4B1500844F62 /* LastRightAnswer+CoreDataClass.swift */; };
+		0283069425CC4B1500844F62 /* LastRightAnswer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283069025CC4B1500844F62 /* LastRightAnswer+CoreDataProperties.swift */; };
+		0283069A25CC916C00844F62 /* RemoveDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283069925CC916C00844F62 /* RemoveDataController.swift */; };
+		0283069D25CC95D200844F62 /* ReportBugController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283069C25CC95D200844F62 /* ReportBugController.swift */; };
+		028306A025CC9F3A00844F62 /* ContactUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283069F25CC9F3A00844F62 /* ContactUsController.swift */; };
+		028306A425CEBA1B00844F62 /* EditGroupNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028306A325CEBA1B00844F62 /* EditGroupNameController.swift */; };
 		02BABBF125B9C0EC007D0D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABBF025B9C0EC007D0D74 /* AppDelegate.swift */; };
 		02BABBF325B9C0EC007D0D74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABBF225B9C0EC007D0D74 /* SceneDelegate.swift */; };
 		02BABBF525B9C0EC007D0D74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABBF425B9C0EC007D0D74 /* ViewController.swift */; };
@@ -14,9 +43,63 @@
 		02BABBFB25B9C0ED007D0D74 /* FiszkiApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02BABBF925B9C0ED007D0D74 /* FiszkiApp.xcdatamodeld */; };
 		02BABBFD25B9C0EF007D0D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BABBFC25B9C0EF007D0D74 /* Assets.xcassets */; };
 		02BABC0025B9C0EF007D0D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BABBFE25B9C0EF007D0D74 /* LaunchScreen.storyboard */; };
+		02BABC1825B9C179007D0D74 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC1325B9C179007D0D74 /* CustomButton.swift */; };
+		02BABC1925B9C179007D0D74 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC1425B9C179007D0D74 /* CustomCell.swift */; };
+		02BABC1B25B9C179007D0D74 /* FlashCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC1625B9C179007D0D74 /* FlashCardCell.swift */; };
+		02BABC1C25B9C179007D0D74 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC1725B9C179007D0D74 /* CustomTextField.swift */; };
+		02BABC2025B9C18B007D0D74 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC1F25B9C18B007D0D74 /* Extensions.swift */; };
+		02BABC2725B9C197007D0D74 /* AddGroupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC2225B9C196007D0D74 /* AddGroupController.swift */; };
+		02BABC2825B9C197007D0D74 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC2325B9C196007D0D74 /* HomeController.swift */; };
+		02BABC2925B9C197007D0D74 /* SwipeFlashCardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC2425B9C196007D0D74 /* SwipeFlashCardsController.swift */; };
+		02BABC2A25B9C197007D0D74 /* AddNewFlashCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC2525B9C197007D0D74 /* AddNewFlashCardController.swift */; };
+		02BABC2B25B9C197007D0D74 /* FlashCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC2625B9C197007D0D74 /* FlashCardController.swift */; };
+		02BABC2F25B9C1AA007D0D74 /* NewGroupFormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC2E25B9C1AA007D0D74 /* NewGroupFormValidation.swift */; };
+		02BABC3425B9C1DF007D0D74 /* FlashCardGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC3225B9C1DF007D0D74 /* FlashCardGroups.swift */; };
+		02BABC3525B9C1DF007D0D74 /* FlashCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC3325B9C1DF007D0D74 /* FlashCards.swift */; };
+		02BABC3925B9C24B007D0D74 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABC3825B9C24B007D0D74 /* Service.swift */; };
+		02BABD0F25BF1255007D0D74 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABD0E25BF1255007D0D74 /* CardView.swift */; };
+		02BABD1A25C038AC007D0D74 /* bouncing-balls.json in Resources */ = {isa = PBXBuildFile; fileRef = 02BABD1925C038AC007D0D74 /* bouncing-balls.json */; };
+		02BABD1E25C039C9007D0D74 /* spinning-balls.json in Resources */ = {isa = PBXBuildFile; fileRef = 02BABD1D25C039C9007D0D74 /* spinning-balls.json */; };
+		02BABD2325C03A7F007D0D74 /* swipe-left.json in Resources */ = {isa = PBXBuildFile; fileRef = 02BABD2125C03A7F007D0D74 /* swipe-left.json */; };
+		02BABD2425C03A7F007D0D74 /* swipe-right.json in Resources */ = {isa = PBXBuildFile; fileRef = 02BABD2225C03A7F007D0D74 /* swipe-right.json */; };
+		02BABD2925C045D5007D0D74 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 02BABD2825C045D5007D0D74 /* loading.json */; };
+		02BABD3225C04CAE007D0D74 /* flashcard-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 02BABD3125C04CAE007D0D74 /* flashcard-animation.json */; };
+		02BABD3625C059A6007D0D74 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABD3525C059A6007D0D74 /* CardViewModel.swift */; };
+		02BABD3C25C16EF3007D0D74 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABD3B25C16EF3007D0D74 /* Animations.swift */; };
+		02BABD4025C19F7D007D0D74 /* EditCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BABD3F25C19F7D007D0D74 /* EditCellController.swift */; };
+		31F3510E2BEC5013CD58DD11 /* libPods-FiszkiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14380FDEBF75788FFE7431C8 /* libPods-FiszkiApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		028304BD25C439DA00844F62 /* checkmark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkmark.json; sourceTree = "<group>"; };
+		028304C925C43AD400844F62 /* checkmark-no.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "checkmark-no.json"; sourceTree = "<group>"; };
+		0283050125C5A20700844F62 /* SummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryController.swift; sourceTree = "<group>"; };
+		028305B025C96F1600844F62 /* RightAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightAnswer.swift; sourceTree = "<group>"; };
+		028305B325C96F9200844F62 /* WrongAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswer.swift; sourceTree = "<group>"; };
+		0283064725CAA1E800844F62 /* Answer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0283064825CAA1E800844F62 /* Answer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0283064B25CAA1E800844F62 /* WrongAnswer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WrongAnswer+CoreDataClass.swift"; path = "FiszkiApp/Entities/WrongAnswer/WrongAnswer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0283064C25CAA1E800844F62 /* WrongAnswer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WrongAnswer+CoreDataProperties.swift"; path = "FiszkiApp/Entities/WrongAnswer/WrongAnswer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0283064D25CAA1E800844F62 /* FlashCardItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FlashCardItem+CoreDataClass.swift"; path = "FiszkiApp/Entities/FlashCardItem/FlashCardItem+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0283064E25CAA1E800844F62 /* FlashCardItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FlashCardItem+CoreDataProperties.swift"; path = "FiszkiApp/Entities/FlashCardItem/FlashCardItem+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0283065125CAA1E800844F62 /* CorrectAnswer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CorrectAnswer+CoreDataClass.swift"; path = "FiszkiApp/Entities/CorrectAnswer/CorrectAnswer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0283065225CAA1E800844F62 /* CorrectAnswer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CorrectAnswer+CoreDataProperties.swift"; path = "FiszkiApp/Entities/CorrectAnswer/CorrectAnswer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0283066725CAA55000844F62 /* LastScore+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LastScore+CoreDataClass.swift"; path = "FiszkiApp/Entities/LastScore/LastScore+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0283066825CAA55000844F62 /* LastScore+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LastScore+CoreDataProperties.swift"; path = "FiszkiApp/Entities/LastScore/LastScore+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0283066F25CAC45E00844F62 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		0283067425CAD10F00844F62 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		0283067925CAE05300844F62 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		0283067D25CAF0DE00844F62 /* AppearanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		0283068125CB186B00844F62 /* AppearanceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSection.swift; sourceTree = "<group>"; };
+		0283068925CC0D6400844F62 /* TestSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSection.swift; sourceTree = "<group>"; };
+		0283068D25CC4B1500844F62 /* GroupItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GroupItem+CoreDataClass.swift"; path = "FiszkiApp/Entities/GroupItem/GroupItem+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0283068E25CC4B1500844F62 /* GroupItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GroupItem+CoreDataProperties.swift"; path = "FiszkiApp/Entities/GroupItem/GroupItem+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0283068F25CC4B1500844F62 /* LastRightAnswer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LastRightAnswer+CoreDataClass.swift"; path = "FiszkiApp/Entities/LastRightAnswer/LastRightAnswer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0283069025CC4B1500844F62 /* LastRightAnswer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LastRightAnswer+CoreDataProperties.swift"; path = "FiszkiApp/Entities/LastRightAnswer/LastRightAnswer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0283069925CC916C00844F62 /* RemoveDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDataController.swift; sourceTree = "<group>"; };
+		0283069C25CC95D200844F62 /* ReportBugController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportBugController.swift; sourceTree = "<group>"; };
+		0283069F25CC9F3A00844F62 /* ContactUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsController.swift; sourceTree = "<group>"; };
+		028306A325CEBA1B00844F62 /* EditGroupNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroupNameController.swift; sourceTree = "<group>"; };
 		02BABBED25B9C0EC007D0D74 /* FiszkiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiszkiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BABBF025B9C0EC007D0D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02BABBF225B9C0EC007D0D74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +109,33 @@
 		02BABBFC25B9C0EF007D0D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02BABBFF25B9C0EF007D0D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02BABC0125B9C0EF007D0D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02BABC1325B9C179007D0D74 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		02BABC1425B9C179007D0D74 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		02BABC1625B9C179007D0D74 /* FlashCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardCell.swift; sourceTree = "<group>"; };
+		02BABC1725B9C179007D0D74 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		02BABC1F25B9C18B007D0D74 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		02BABC2225B9C196007D0D74 /* AddGroupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupController.swift; sourceTree = "<group>"; };
+		02BABC2325B9C196007D0D74 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		02BABC2425B9C196007D0D74 /* SwipeFlashCardsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeFlashCardsController.swift; sourceTree = "<group>"; };
+		02BABC2525B9C197007D0D74 /* AddNewFlashCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewFlashCardController.swift; sourceTree = "<group>"; };
+		02BABC2625B9C197007D0D74 /* FlashCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardController.swift; sourceTree = "<group>"; };
+		02BABC2E25B9C1AA007D0D74 /* NewGroupFormValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupFormValidation.swift; sourceTree = "<group>"; };
+		02BABC3225B9C1DF007D0D74 /* FlashCardGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardGroups.swift; sourceTree = "<group>"; };
+		02BABC3325B9C1DF007D0D74 /* FlashCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCards.swift; sourceTree = "<group>"; };
+		02BABC3825B9C24B007D0D74 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		02BABD0E25BF1255007D0D74 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		02BABD1925C038AC007D0D74 /* bouncing-balls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bouncing-balls.json"; sourceTree = "<group>"; };
+		02BABD1D25C039C9007D0D74 /* spinning-balls.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "spinning-balls.json"; sourceTree = "<group>"; };
+		02BABD2125C03A7F007D0D74 /* swipe-left.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "swipe-left.json"; sourceTree = "<group>"; };
+		02BABD2225C03A7F007D0D74 /* swipe-right.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "swipe-right.json"; sourceTree = "<group>"; };
+		02BABD2825C045D5007D0D74 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		02BABD3125C04CAE007D0D74 /* flashcard-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "flashcard-animation.json"; sourceTree = "<group>"; };
+		02BABD3525C059A6007D0D74 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		02BABD3B25C16EF3007D0D74 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		02BABD3F25C19F7D007D0D74 /* EditCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCellController.swift; sourceTree = "<group>"; };
+		14380FDEBF75788FFE7431C8 /* libPods-FiszkiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiszkiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		287E5412CB6919A3B5B4A8C2 /* Pods-FiszkiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiszkiApp.debug.xcconfig"; path = "Target Support Files/Pods-FiszkiApp/Pods-FiszkiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F95D8CBCA6D9C757B0D5CB4E /* Pods-FiszkiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiszkiApp.release.xcconfig"; path = "Target Support Files/Pods-FiszkiApp/Pods-FiszkiApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +143,95 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F3510E2BEC5013CD58DD11 /* libPods-FiszkiApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		028304D525C46CEA00844F62 /* CorrectAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				0283065125CAA1E800844F62 /* CorrectAnswer+CoreDataClass.swift */,
+				0283065225CAA1E800844F62 /* CorrectAnswer+CoreDataProperties.swift */,
+			);
+			path = CorrectAnswer;
+			sourceTree = "<group>";
+		};
+		028304DC25C46D2100844F62 /* WrongAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				0283064B25CAA1E800844F62 /* WrongAnswer+CoreDataClass.swift */,
+				0283064C25CAA1E800844F62 /* WrongAnswer+CoreDataProperties.swift */,
+			);
+			path = WrongAnswer;
+			sourceTree = "<group>";
+		};
+		028305E325C984FE00844F62 /* Answer */ = {
+			isa = PBXGroup;
+			children = (
+				0283064725CAA1E800844F62 /* Answer+CoreDataClass.swift */,
+				0283064825CAA1E800844F62 /* Answer+CoreDataProperties.swift */,
+			);
+			path = Answer;
+			sourceTree = "<group>";
+		};
+		0283064625CAA1C700844F62 /* LastScore */ = {
+			isa = PBXGroup;
+			children = (
+				0283066725CAA55000844F62 /* LastScore+CoreDataClass.swift */,
+				0283066825CAA55000844F62 /* LastScore+CoreDataProperties.swift */,
+			);
+			path = LastScore;
+			sourceTree = "<group>";
+		};
+		0283067325CAD10600844F62 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0283067425CAD10F00844F62 /* SettingsCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0283067C25CAF0C800844F62 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0283066F25CAC45E00844F62 /* SettingsController.swift */,
+				0283067D25CAF0DE00844F62 /* AppearanceController.swift */,
+				0283069925CC916C00844F62 /* RemoveDataController.swift */,
+				0283069C25CC95D200844F62 /* ReportBugController.swift */,
+				0283069F25CC9F3A00844F62 /* ContactUsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0283068425CB187000844F62 /* SettingsModel */ = {
+			isa = PBXGroup;
+			children = (
+				0283067925CAE05300844F62 /* SettingsSection.swift */,
+				0283068125CB186B00844F62 /* AppearanceSection.swift */,
+				0283068925CC0D6400844F62 /* TestSection.swift */,
+			);
+			path = SettingsModel;
+			sourceTree = "<group>";
+		};
+		0283069625CC4B1F00844F62 /* LastRightAnswer */ = {
+			isa = PBXGroup;
+			children = (
+				0283068F25CC4B1500844F62 /* LastRightAnswer+CoreDataClass.swift */,
+				0283069025CC4B1500844F62 /* LastRightAnswer+CoreDataProperties.swift */,
+			);
+			path = LastRightAnswer;
+			sourceTree = "<group>";
+		};
 		02BABBE425B9C0EC007D0D74 = {
 			isa = PBXGroup;
 			children = (
 				02BABBEF25B9C0EC007D0D74 /* FiszkiApp */,
 				02BABBEE25B9C0EC007D0D74 /* Products */,
+				C75F3D85FF254F8170975519 /* Pods */,
+				4D560AC35E21B00AD78CDFFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +246,14 @@
 		02BABBEF25B9C0EC007D0D74 /* FiszkiApp */ = {
 			isa = PBXGroup;
 			children = (
+				02BABD1825C038A4007D0D74 /* Animations */,
+				02BABC3C25B9D76D007D0D74 /* Entities */,
+				02BABC3725B9C243007D0D74 /* Service */,
+				02BABC0F25B9C146007D0D74 /* View */,
+				02BABC3125B9C1D5007D0D74 /* Model */,
+				02BABC1225B9C15C007D0D74 /* Utilis */,
+				02BABC1125B9C155007D0D74 /* ViewModel */,
+				02BABC1025B9C14F007D0D74 /* Controller */,
 				02BABBF025B9C0EC007D0D74 /* AppDelegate.swift */,
 				02BABBF225B9C0EC007D0D74 /* SceneDelegate.swift */,
 				02BABBF425B9C0EC007D0D74 /* ViewController.swift */,
@@ -70,6 +266,169 @@
 			path = FiszkiApp;
 			sourceTree = "<group>";
 		};
+		02BABC0D25B9C126007D0D74 /* GroupItem */ = {
+			isa = PBXGroup;
+			children = (
+				0283068D25CC4B1500844F62 /* GroupItem+CoreDataClass.swift */,
+				0283068E25CC4B1500844F62 /* GroupItem+CoreDataProperties.swift */,
+			);
+			path = GroupItem;
+			sourceTree = "<group>";
+		};
+		02BABC0F25B9C146007D0D74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0283067325CAD10600844F62 /* Settings */,
+				02BABC1325B9C179007D0D74 /* CustomButton.swift */,
+				02BABC1425B9C179007D0D74 /* CustomCell.swift */,
+				02BABC1725B9C179007D0D74 /* CustomTextField.swift */,
+				02BABC1625B9C179007D0D74 /* FlashCardCell.swift */,
+				02BABD0E25BF1255007D0D74 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02BABC1025B9C14F007D0D74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0283067C25CAF0C800844F62 /* Settings */,
+				02BABD4425C1BCBE007D0D74 /* UpdateData */,
+				02BABD4225C1BCA2007D0D74 /* CreateNewData */,
+				02BABC2625B9C197007D0D74 /* FlashCardController.swift */,
+				02BABC2325B9C196007D0D74 /* HomeController.swift */,
+				02BABC2425B9C196007D0D74 /* SwipeFlashCardsController.swift */,
+				0283050125C5A20700844F62 /* SummaryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02BABC1125B9C155007D0D74 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02BABD3B25C16EF3007D0D74 /* Animations.swift */,
+				02BABC2D25B9C19D007D0D74 /* FormValidation */,
+				02BABD3525C059A6007D0D74 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02BABC1225B9C15C007D0D74 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				02BABC1F25B9C18B007D0D74 /* Extensions.swift */,
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		02BABC2D25B9C19D007D0D74 /* FormValidation */ = {
+			isa = PBXGroup;
+			children = (
+				02BABC2E25B9C1AA007D0D74 /* NewGroupFormValidation.swift */,
+			);
+			path = FormValidation;
+			sourceTree = "<group>";
+		};
+		02BABC3125B9C1D5007D0D74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02BABC3225B9C1DF007D0D74 /* FlashCardGroups.swift */,
+				02BABC3325B9C1DF007D0D74 /* FlashCards.swift */,
+				028305B025C96F1600844F62 /* RightAnswer.swift */,
+				028305B325C96F9200844F62 /* WrongAnswer.swift */,
+				0283068425CB187000844F62 /* SettingsModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02BABC3725B9C243007D0D74 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				02BABC3825B9C24B007D0D74 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		02BABC3C25B9D76D007D0D74 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0283069625CC4B1F00844F62 /* LastRightAnswer */,
+				0283064625CAA1C700844F62 /* LastScore */,
+				028305E325C984FE00844F62 /* Answer */,
+				028304DC25C46D2100844F62 /* WrongAnswer */,
+				028304D525C46CEA00844F62 /* CorrectAnswer */,
+				02BABC3E25B9D774007D0D74 /* FlashCardItem */,
+				02BABC0D25B9C126007D0D74 /* GroupItem */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		02BABC3E25B9D774007D0D74 /* FlashCardItem */ = {
+			isa = PBXGroup;
+			children = (
+				0283064D25CAA1E800844F62 /* FlashCardItem+CoreDataClass.swift */,
+				0283064E25CAA1E800844F62 /* FlashCardItem+CoreDataProperties.swift */,
+			);
+			path = FlashCardItem;
+			sourceTree = "<group>";
+		};
+		02BABD1825C038A4007D0D74 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				02BABD3925C16ED2007D0D74 /* JSON Files */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		02BABD3925C16ED2007D0D74 /* JSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				028304BD25C439DA00844F62 /* checkmark.json */,
+				028304C925C43AD400844F62 /* checkmark-no.json */,
+				02BABD3125C04CAE007D0D74 /* flashcard-animation.json */,
+				02BABD2825C045D5007D0D74 /* loading.json */,
+				02BABD1925C038AC007D0D74 /* bouncing-balls.json */,
+				02BABD1D25C039C9007D0D74 /* spinning-balls.json */,
+				02BABD2125C03A7F007D0D74 /* swipe-left.json */,
+				02BABD2225C03A7F007D0D74 /* swipe-right.json */,
+			);
+			path = "JSON Files";
+			sourceTree = "<group>";
+		};
+		02BABD4225C1BCA2007D0D74 /* CreateNewData */ = {
+			isa = PBXGroup;
+			children = (
+				02BABC2225B9C196007D0D74 /* AddGroupController.swift */,
+				02BABC2525B9C197007D0D74 /* AddNewFlashCardController.swift */,
+			);
+			path = CreateNewData;
+			sourceTree = "<group>";
+		};
+		02BABD4425C1BCBE007D0D74 /* UpdateData */ = {
+			isa = PBXGroup;
+			children = (
+				02BABD3F25C19F7D007D0D74 /* EditCellController.swift */,
+				028306A325CEBA1B00844F62 /* EditGroupNameController.swift */,
+			);
+			path = UpdateData;
+			sourceTree = "<group>";
+		};
+		4D560AC35E21B00AD78CDFFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14380FDEBF75788FFE7431C8 /* libPods-FiszkiApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C75F3D85FF254F8170975519 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				287E5412CB6919A3B5B4A8C2 /* Pods-FiszkiApp.debug.xcconfig */,
+				F95D8CBCA6D9C757B0D5CB4E /* Pods-FiszkiApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +436,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02BABC0425B9C0EF007D0D74 /* Build configuration list for PBXNativeTarget "FiszkiApp" */;
 			buildPhases = (
+				63644A995133AB9F06EC89E8 /* [CP] Check Pods Manifest.lock */,
 				02BABBE925B9C0EC007D0D74 /* Sources */,
 				02BABBEA25B9C0EC007D0D74 /* Frameworks */,
 				02BABBEB25B9C0EC007D0D74 /* Resources */,
@@ -128,22 +488,100 @@
 			buildActionMask = 2147483647;
 			files = (
 				02BABC0025B9C0EF007D0D74 /* LaunchScreen.storyboard in Resources */,
+				02BABD1E25C039C9007D0D74 /* spinning-balls.json in Resources */,
+				02BABD2925C045D5007D0D74 /* loading.json in Resources */,
+				028304CA25C43AD400844F62 /* checkmark-no.json in Resources */,
+				02BABD1A25C038AC007D0D74 /* bouncing-balls.json in Resources */,
+				028304BE25C439DA00844F62 /* checkmark.json in Resources */,
 				02BABBFD25B9C0EF007D0D74 /* Assets.xcassets in Resources */,
+				02BABD2425C03A7F007D0D74 /* swipe-right.json in Resources */,
+				02BABD2325C03A7F007D0D74 /* swipe-left.json in Resources */,
+				02BABD3225C04CAE007D0D74 /* flashcard-animation.json in Resources */,
 				02BABBF825B9C0EC007D0D74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63644A995133AB9F06EC89E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiszkiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02BABBE925B9C0EC007D0D74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02BABC2B25B9C197007D0D74 /* FlashCardController.swift in Sources */,
+				0283065A25CAA1E800844F62 /* FlashCardItem+CoreDataProperties.swift in Sources */,
+				0283069425CC4B1500844F62 /* LastRightAnswer+CoreDataProperties.swift in Sources */,
+				0283050225C5A20700844F62 /* SummaryController.swift in Sources */,
+				0283069125CC4B1500844F62 /* GroupItem+CoreDataClass.swift in Sources */,
+				02BABC1B25B9C179007D0D74 /* FlashCardCell.swift in Sources */,
+				02BABD4025C19F7D007D0D74 /* EditCellController.swift in Sources */,
+				02BABC2725B9C197007D0D74 /* AddGroupController.swift in Sources */,
+				02BABC1C25B9C179007D0D74 /* CustomTextField.swift in Sources */,
+				02BABD3C25C16EF3007D0D74 /* Animations.swift in Sources */,
+				0283065825CAA1E800844F62 /* WrongAnswer+CoreDataProperties.swift in Sources */,
+				028305B425C96F9200844F62 /* WrongAnswer.swift in Sources */,
+				0283069225CC4B1500844F62 /* GroupItem+CoreDataProperties.swift in Sources */,
+				02BABC3425B9C1DF007D0D74 /* FlashCardGroups.swift in Sources */,
+				02BABC2F25B9C1AA007D0D74 /* NewGroupFormValidation.swift in Sources */,
+				0283065D25CAA1E800844F62 /* CorrectAnswer+CoreDataClass.swift in Sources */,
+				0283067525CAD10F00844F62 /* SettingsCell.swift in Sources */,
 				02BABBF525B9C0EC007D0D74 /* ViewController.swift in Sources */,
+				0283069D25CC95D200844F62 /* ReportBugController.swift in Sources */,
+				02BABC2925B9C197007D0D74 /* SwipeFlashCardsController.swift in Sources */,
+				0283065725CAA1E800844F62 /* WrongAnswer+CoreDataClass.swift in Sources */,
+				0283069325CC4B1500844F62 /* LastRightAnswer+CoreDataClass.swift in Sources */,
+				0283065325CAA1E800844F62 /* Answer+CoreDataClass.swift in Sources */,
+				0283066C25CAA55000844F62 /* LastScore+CoreDataProperties.swift in Sources */,
 				02BABBF125B9C0EC007D0D74 /* AppDelegate.swift in Sources */,
+				02BABC2825B9C197007D0D74 /* HomeController.swift in Sources */,
+				02BABC2A25B9C197007D0D74 /* AddNewFlashCardController.swift in Sources */,
 				02BABBF325B9C0EC007D0D74 /* SceneDelegate.swift in Sources */,
+				0283067A25CAE05300844F62 /* SettingsSection.swift in Sources */,
+				02BABC1825B9C179007D0D74 /* CustomButton.swift in Sources */,
+				02BABC1925B9C179007D0D74 /* CustomCell.swift in Sources */,
+				0283068225CB186B00844F62 /* AppearanceSection.swift in Sources */,
+				02BABD3625C059A6007D0D74 /* CardViewModel.swift in Sources */,
+				0283069A25CC916C00844F62 /* RemoveDataController.swift in Sources */,
+				0283067025CAC45E00844F62 /* SettingsController.swift in Sources */,
+				0283065925CAA1E800844F62 /* FlashCardItem+CoreDataClass.swift in Sources */,
+				0283067E25CAF0DE00844F62 /* AppearanceController.swift in Sources */,
+				0283065E25CAA1E800844F62 /* CorrectAnswer+CoreDataProperties.swift in Sources */,
+				02BABD0F25BF1255007D0D74 /* CardView.swift in Sources */,
+				028305B125C96F1600844F62 /* RightAnswer.swift in Sources */,
+				02BABC3525B9C1DF007D0D74 /* FlashCards.swift in Sources */,
+				02BABC3925B9C24B007D0D74 /* Service.swift in Sources */,
+				02BABC2025B9C18B007D0D74 /* Extensions.swift in Sources */,
+				0283065425CAA1E800844F62 /* Answer+CoreDataProperties.swift in Sources */,
 				02BABBFB25B9C0ED007D0D74 /* FiszkiApp.xcdatamodeld in Sources */,
+				0283066B25CAA55000844F62 /* LastScore+CoreDataClass.swift in Sources */,
+				028306A025CC9F3A00844F62 /* ContactUsController.swift in Sources */,
+				0283068A25CC0D6400844F62 /* TestSection.swift in Sources */,
+				028306A425CEBA1B00844F62 /* EditGroupNameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +725,7 @@
 		};
 		02BABC0525B9C0EF007D0D74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287E5412CB6919A3B5B4A8C2 /* Pods-FiszkiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +745,7 @@
 		};
 		02BABC0625B9C0EF007D0D74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95D8CBCA6D9C757B0D5CB4E /* Pods-FiszkiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

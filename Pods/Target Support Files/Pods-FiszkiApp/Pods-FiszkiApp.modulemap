@@ -1,0 +1,6 @@
+module Pods_FiszkiApp {
+  umbrella header "Pods-FiszkiApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
