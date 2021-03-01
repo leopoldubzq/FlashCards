@@ -1,10 +1,10 @@
 # FlashCards
 
-Flashcards is an educational app that helps you learn more effectively. Create flashcards in very easy and convenience way. Check your knowledge with a simple and modern swipe left/right functionality. You have 100% control over your flashcards by creating, editing or deleting data.
+Flashcards is an educational app that helps you learn more effectively. Create flashcards in very easy and convenience way. Check your knowledge with a simple and modern swipe left/right functionality. You have 100% control over your flashcards by creating, editing, retrieving or deleting data.
 
 ## Core Data
 
-Flashcards app uses Core Data to create, edit and retrieve data.
+Flashcards app uses Core Data to create, edit, delete and retrieve data.
 
 ## Programmatic UI
 
