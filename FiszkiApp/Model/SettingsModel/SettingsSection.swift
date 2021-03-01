@@ -12,8 +12,8 @@ enum SettingsSection: Int, CaseIterable, CustomStringConvertible {
     
     var description: String {
         switch self {
-        case .General: return "Ogólne"
-        case .Contact: return "Kontakt"
+        case .General: return "General"
+        case .Contact: return "Contact"
         }
     }
 }
@@ -24,7 +24,7 @@ enum GeneralOptions: Int, CaseIterable, CustomStringConvertible {
     
     var description: String {
         switch self {
-        case .data: return "Wyzeruj dane"
+        case .data: return "Remove data"
         }
     }
 }
@@ -36,8 +36,8 @@ enum ContactOptions: Int, CaseIterable, CustomStringConvertible {
     
     var description: String {
         switch self {
-        case .reportBug: return "Zgłoś błąd"
-        case .sendMessage: return "Skontaktuj się z nami"
+        case .reportBug: return "Report a bug"
+        case .sendMessage: return "Contact with us"
         }
     }
 }
