@@ -14,7 +14,7 @@ I created User Interface 100% programmatically without using Storyboard.
 
 To make life easier I used auto layout extensions file which helped me creating UI way more faster. Also, extension file contains custom classes like "CustomTextField" to prevent creating redundant data.
 
-## Manage with memory leaks
+## Managing with memory leaks
 
 To manage with memory leaks application uses delegates defined as weak variable or "weak self" in completion blocks to prevent retain cycle.
 
