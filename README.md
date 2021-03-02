@@ -16,7 +16,7 @@ I created User Interface 100% programmatically without using Storyboard.
 
 ## Extensions
 
-To make life easier I used auto layout extensions file which helped me creating UI way more faster. Also, extension file contains custom classes like "CustomTextField" to prevent creating redundant data.
+To make life easier I used auto layout extensions file which helped me creating UI way more faster.
 
 ## Managing with memory leaks
 
@@ -24,7 +24,7 @@ To manage with memory leaks application uses delegates defined as weak variable 
 
 ## Model, View and ViewController
 
-I used MVC design pattern to seperate view and model from ViewController but some files have MVVM architecture.
+I used MVC design pattern to seperate view and model from ViewController but some files have MVVM architecture. The "View" segment contains custom classes like CustomTextField, CustomCell etc. to prevent creating redundant data.
 
 ## Form validation
 The application uses form validation to not let give user possibillity to create empty flashcards or groups. The form validation is created with RxSwift and RxCocoa framework.
