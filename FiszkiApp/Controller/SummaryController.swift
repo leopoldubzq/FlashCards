@@ -169,6 +169,13 @@ class SummaryController: UIViewController {
         wrongAnswersLabel.centerX(inView: view)
         wrongAnswersLabel.anchor(top: progressBar.bottomAnchor, paddingTop: 30)
         
+        guard let wrongAnswersCount = group?.wrongAnswers?.count else { return }
+        
+        if wrongAnswersCount == 0 {
+            wrongAnswersLabel.text = ""
+        }
+        
+        
         
         
         view.addSubview(tableView)
@@ -193,7 +200,7 @@ class SummaryController: UIViewController {
     func configureMainLabelText() {
         switch calculateEffectiveness() {
         case 0...50: return mainTitle.text = "You need to work on your flashcards more :("
-        case 51...70: return mainTitle.text = "Not so bad! Just few more times and it's gonna be 100!"
+        case 51...70: return mainTitle.text = "Not so bad! Just few more times and it's gonna be 100%!"
         case 71...90: return mainTitle.text = "Getting closer to the goal! Try again!"
         case 91...99.99: return mainTitle.text = "Almost done!!! Try again and achieve 100%!"
         default: break
