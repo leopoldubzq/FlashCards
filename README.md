@@ -2,6 +2,8 @@
 
 Flashcards is an educational app that helps you learn more effectively. Create flashcards in very easy and convenience way. Check your knowledge with a simple and modern swipe left/right functionality. You have 100% control over your flashcards by creating, editing, retrieving or deleting data.
 
+![App presentation](https://user-images.githubusercontent.com/60520591/109629957-acaddc80-7b44-11eb-98d3-ecb9c9c5e688.png)
+
 ## Core Data
 
 Flashcards app uses Core Data to create, edit, delete and retrieve data.
