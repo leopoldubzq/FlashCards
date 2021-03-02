@@ -82,7 +82,7 @@ class CardView: UIView {
     
     lazy var rightLabel: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Good!"
+        lbl.text = "Correct!"
         lbl.textColor = .systemGreen
         lbl.font = UIFont(name: "ChalkboardSE-Bold", size: 23)
         lbl.alpha = 0
@@ -91,7 +91,7 @@ class CardView: UIView {
     
     lazy var leftLabel: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Bad :("
+        lbl.text = "Wrong :("
         lbl.textColor = .systemRed
         lbl.font = UIFont(name: "ChalkboardSE-Bold", size: 23)
         lbl.alpha = 0

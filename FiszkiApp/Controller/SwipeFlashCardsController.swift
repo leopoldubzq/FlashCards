@@ -174,7 +174,7 @@ class SwipeFlashCardsController: UIViewController {
     
     private let correctAnswerLabel: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Good answers:"
+        lbl.text = "Correct answers:"
         lbl.textColor = .black
         lbl.font = .systemFont(ofSize: 22)
         return lbl
@@ -190,7 +190,7 @@ class SwipeFlashCardsController: UIViewController {
     
     private let wrongAnswerLabel: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Bad answers:"
+        lbl.text = "Wrong answers:"
         lbl.textColor = .black
         lbl.font = .systemFont(ofSize: 22)
         return lbl
