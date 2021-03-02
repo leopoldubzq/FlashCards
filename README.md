@@ -25,4 +25,4 @@ To manage with memory leaks application uses delegates defined as weak variable 
 I used MVC design pattern to seperate view and model from ViewController but some files have MVVM architecture.
 
 ## Form validation
-The application uses form validation to not let user possibillity to create empty flashcards or groups. The form validation is created with RxSwift and RxCocoa framework.
+The application uses form validation to not let give user possibillity to create empty flashcards or groups. The form validation is created with RxSwift and RxCocoa framework.
