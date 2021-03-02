@@ -4,6 +4,10 @@ Flashcards is an educational app that helps you learn more effectively. Create f
 
 ![App presentation](https://user-images.githubusercontent.com/60520591/109629957-acaddc80-7b44-11eb-98d3-ecb9c9c5e688.png)
 
+
+https://user-images.githubusercontent.com/60520591/109638247-14b4f080-7b4e-11eb-9746-c22042dd9b05.mp4
+
+
 ## Core Data
 
 Flashcards app uses Core Data to create, edit, delete and retrieve data.
